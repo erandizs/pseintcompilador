@@ -9,8 +9,14 @@
    <body>
         <div class="encabezado"><button class="run">Run</button></div>
         <div class="instrucciones">AQUI VAN LAS INSTRUCCIONES<br>fkghetnber</div>
-        <div class="codigo"></div>
-        <div class="terminal"></div>
+        <div class="codigo">
+            <textarea clrTextarea [(ngModel)]="comentar" class="areacodigo" required placeholder="Escribe aquí tu código"></textarea>
+      
+        </div>
+        
+        <div class="terminal">
+             <textarea style="color: rgb(255, 255, 255)" readonly onmousedown="return false;" clrTextarea [(ngModel)]="comentar" class="areacterm" >holaa</textarea>
+        </div>
 
     </body>
 </html>
